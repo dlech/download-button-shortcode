@@ -4,22 +4,25 @@
  * Plugin URI: http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/
  * Author: H.-Peter Pfeufer
  * Author URI: http://ppfeufer.de
- * Version: 1.1.1
+ * Version: 1.1.2
  * Description: Add a shortcode to your wordpress for a nice downloadbutton. <code>&#91;dl url="" title="" desc=""&#93;</code>. Graphics made by: <a href="http://kkoepke.de">Kai Köpke</a>. If you made your own graphic for this button, feel free to write it in the commants under <a href="http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/">http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/</a>.
  */
 
 
 /**
  * Changelog:
- *		= 1.1.1 =
- *		Renamed to Download Button Shortcode
- *		Upload to Wordpress Plugin Directory
+ * = 1.1.2 (24. Februar 2011) =
+ * Ready for WordPress 3.1
  *
- *		= 1.1.0 =
- *		Added Shortcodeoption for Buttonposition <code>&#91;dl url="" title="" desc="" align=""&#93;</code>. This ist optional. If not set, the button will appear centered. Possible options are "center", "left" and "right"
+ * = 1.1.1 =
+ * Renamed to Download Button Shortcode
+ * Upload to Wordpress Plugin Directory
  *
- *		= 1.0.0 =
- *		Initial Release
+ * = 1.1.0 =
+ * Added Shortcodeoption for Buttonposition <code>&#91;dl url="" title="" desc="" align=""&#93;</code>. This ist optional. If not set, the button will appear centered. Possible options are "center", "left" and "right"
+ *
+ * = 1.0.0 =
+ * Initial Release
  */
 
 
@@ -29,7 +32,7 @@
  */
 
 if(!is_admin()) { // Nur wenn keine Adminseite
-	define('DOWNLOADBUTTON_VERSION', '1.1.1');
+	define('DOWNLOADBUTTON_VERSION', '1.1.2');
 
 	$css_url = plugins_url(basename(dirname(__FILE__)) . '/css/downloadbutton.css');
 
