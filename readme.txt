@@ -3,14 +3,14 @@ Contributors: ppfeufer
 Donate link:
 Tags: download, button, shortcode
 Requires at least: 2.9.2
-Tested up to: 3.4-alpha-19978
-Stable tag: 1.2
+Tested up to: 3.4
+Stable tag: 1.3
 
 Add a shortcode to your wordpress for a nice downloadbutton.
 
 == Description ==
 
-Add a shortcode to your wordpress for a nice downloadbutton. <code>&#91;dl url="" title="" desc=""&#93;</code>.<br />Graphics made by: <a href="http://kkoepke.de">Kai Köpke</a>.<br />If you made your own graphic for this button, feel free to write it in the comments under <a href="http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/">http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/</a>.
+Add a shortcode to your wordpress for a nice downloadbutton. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>.<br />Graphics made by: <a href="http://kkoepke.de">Kai Köpke</a>.<br />If you made your own graphic for this button, feel free to write it in the comments under <a href="http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/">http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/</a>.
 
 == Installation ==
 
@@ -22,6 +22,13 @@ You can use the built in installer and upgrader, or you can install the plugin m
 2. The Button (hover)
 
 == Changelog ==
+
+= 1.3 =
+* (29. April 2012)
+* Updated CSS
+* Updated Look and Feel. Its looks more modern now.
+* Added Download-Types. (PDF, Archive, Audio, Video, Image, Link, Doc)
+* better, newer, cooler :-)
 
 = 1.2 =
 * (27. Februar 2011)
