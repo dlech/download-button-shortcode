@@ -4,7 +4,7 @@
  * Plugin URI: http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/
  * Author: H.-Peter Pfeufer
  * Author URI: http://ppfeufer.de
- * Version: 1.3
+ * Version: 1.3.1
  * Description: Add a shortcode to your wordpress for a nice downloadbutton. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>. Graphics made by: <a href="http://kkoepke.de">Kai Köpke</a>. If you made your own graphic for this button, feel free to write it in the comments under <a href="http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/">http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/</a>.
  */
 
@@ -13,7 +13,9 @@ if(!is_admin()) { // Nur wenn keine Adminseite
 	 * CSS in Wordpress einbinden
 	 */
 	function download_button_css() {
-		wp_enqueue_style('download-button-shortcode-css', '/' . PLUGINDIR . '/' . dirname(plugin_basename(__FILE__)) . '/css/downloadbutton.css', false);
+		if(!is_admin()) {
+			wp_enqueue_style('download-button-shortcode-css', '/' . PLUGINDIR . '/' . dirname(plugin_basename(__FILE__)) . '/css/downloadbutton.css', false);
+		}
 	}
 	add_action('init', 'download_button_css');
 
