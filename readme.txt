@@ -3,8 +3,8 @@ Contributors: ppfeufer
 Donate link:
 Tags: download, button, shortcode
 Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 2.0
+Tested up to: 3.8-alpha
+Stable tag: 2.1
 
 Add a shortcode to your wordpress for a nice downloadbutton.
 
@@ -21,6 +21,10 @@ You can use the built in installer and upgrader, or you can install the plugin m
 1. The Button
 
 == Changelog ==
+
+= 2.1 =
+* (02. November 2012)
+* Tested up to WordPress 3.8-alpha
 
 = 2.0 =
 * (22. Juli 2012)
