@@ -87,10 +87,10 @@ if(!class_exists('Download_Button_Shortcode')) {
 			} // END if(!$url)
 
 			/**
-			 * If no align, simply center the button.
+			 * If no align, just say none.
 			 */
 			if(!$align) {
-				$align = 'center';
+				$align = 'none';
 			} // END if(!$align)
 
 			/**
