@@ -54,6 +54,9 @@
 .dwnld-button-shortcode a span em {
 	font-size: 14px;
 }
+.dwnld-button-shortcode .download-size {
+	font-size: 11px;
+}
 .button-download {
 	width: 100%;
 	max-width: 280px;

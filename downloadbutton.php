@@ -65,7 +65,8 @@ if(!class_exists('Download_Button_Shortcode')) {
 				'title' => '',
 				'desc' => '',
 				'align' => '',
-				'target' => ''
+				'target' => '',
+				'size' => ''
 			), $atts));
 
 			$array_Downloadtypes = array(
@@ -489,6 +490,9 @@ if(!class_exists('Download_Button_Shortcode')) {
 				$type = 'class="download"';
 			} // END if($type)
 
+			if (!$size && file_exists ( '.' . $url ) )
+				$size = size_format( filesize( '.' . $url ) );
+
 			/**
 			 * The HTML
 			 */
@@ -496,8 +500,8 @@ if(!class_exists('Download_Button_Shortcode')) {
 			$var_sHTML .= '<div class="dwnld-button-shortcode button-download align' . $align . '">
 							<a ' . $type . ' href="' . $url . '" ' . $target . '>
 								<span>
-									<span class="download-title">' . $title . '</span><br />
-									<em class="download-description">' . $desc . '</em>
+									<span class="download-title">' . $title . '</span>' . ( $size ? '&nbsp;<i class="download-size">(' . $size . ')</i>' : '' ) . '<br />
+									' . ( $desc ? '<em class="download-description">' . $desc . '</em><br />' : '' ) . '
 								</span>
 							</a>
 						</div>';
