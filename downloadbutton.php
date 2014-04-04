@@ -491,7 +491,7 @@ if(!class_exists('Download_Button_Shortcode')) {
 			} // END if($type)
 
 			if (!$size && file_exists ( '.' . $url ) )
-				$size = size_format( filesize( '.' . $url ) );
+				$size = str_replace( ' ', '&nbsp;', size_format( filesize( '.' . $url ) ) );
 
 			/**
 			 * The HTML
@@ -500,7 +500,7 @@ if(!class_exists('Download_Button_Shortcode')) {
 			$var_sHTML .= '<div class="dwnld-button-shortcode button-download align' . $align . '">
 							<a ' . $type . ' href="' . $url . '" ' . $target . '>
 								<span>
-									<span class="download-title">' . $title . '</span>' . ( $size ? '&nbsp;<i class="download-size">(' . $size . ')</i>' : '' ) . '<br />
+									<span class="download-title">' . $title . '</span>' . ( $size ? ' <i class="download-size">(' . $size . ')</i>' : '' ) . '<br />
 									' . ( $desc ? '<em class="download-description">' . $desc . '</em><br />' : '' ) . '
 								</span>
 							</a>
